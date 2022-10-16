@@ -1,14 +1,4 @@
-# [Screenshotit_bot](https://tx.me/screenshotit_bot)
 
-> Telegram Bot For Screenshot Generation.
-
-## Description
-
-An attempt to implement the screenshot generation of telegram files without downloading the entire file. Live version can be found here [@screenshotit_bot](https://tx.me/screenshotit_bot "Screenshot Generator Bot").
-
-## Installation Guide
-
-### Prerequisites
 
 * FFmpeg.
 * Python3 (3.6 or higher).
@@ -19,21 +9,9 @@ An attempt to implement the screenshot generation of telegram files without down
 
 * Clone to local machine.
 
-``` bash
-$ git clone https://github.com/odysseusmax/animated-lamp.git
-$ cd animated-lamp
-````
 
-* Create and activate virtual environment.
 
-```
-$ python3 -m venv venv
-$ source venv/bin/activate
-```
 
-* Install dependencies.
-
-```
 $ pip3 install -U -r requirements.txt
 ```
 
@@ -109,11 +87,6 @@ Contributions are welcome.
 
 ## Contact
 You can contact me [@odysseusmax](https://tx.me/odysseusmax).
-
-## Thanks
-Thanks to [Dan](https://github.com/delivrance "Dan") for his [Pyrogram](https://github.com/pyrogram/pyrogram "Pyrogram") library.
-
-Thanks to [Tulir Asokan](https://github.com/tulir "Tulir Asokan") for his [TgFileStream](https://github.com/tulir/tgfilestream "TgFileStream") Bot.
 
 ## Dependencies
 * pyrogram
