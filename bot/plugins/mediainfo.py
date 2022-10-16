@@ -51,12 +51,12 @@ async def __(c, m):
     with tempfile.TemporaryDirectory() as temp_dir:
         temp_file_name = os.path.join(temp_dir, "mediainfo.txt")
         media_info = await m.message.download(temp_file_name)
-        neko_endpoint = "https://nekobin.com/api/documents"
+        neko_endpoint = "https://api.telegra.ph/"
         async with aiohttp.ClientSession() as nekoSession:
             payload = {"content": open(media_info, "r").read()}
             async with nekoSession.post(neko_endpoint, data=payload) as resp:
                 resp = await resp.json()
-                neko_link = f"https://nekobin.com/{resp['result']['key']}"
+                neko_link = f"https://telegra.ph/file/{resp['result']['key']}"
         logger.debug(neko_link)
         await m.edit_message_reply_markup(
             InlineKeyboardMarkup([[InlineKeyboardButton("Web URL", url=neko_link)]])
